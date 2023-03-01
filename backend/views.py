@@ -6,7 +6,9 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 
-from backend import serializers
+
+def home(request):
+    return JsonResponse("Hey", safe=False)
 
 
 @api_view(["GET", "POST"])

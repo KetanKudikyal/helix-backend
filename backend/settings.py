@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-fomkbf%eja=2co#t1h&m8s(*_%oz6h2h!3l0i#gfarngi(4s!=
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "ketan2.pythonanywhere.com"
+    "ketan2.pythonanywhere.com",
+    "127.0.0.1"
 ]
 
 

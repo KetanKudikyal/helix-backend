@@ -18,6 +18,7 @@ from django.urls import path
 from backend import views
 
 urlpatterns = [
+    path('', views.home),
     path('admin/', admin.site.urls),
     path('questions', views.questionList),
     path('questions/<int:id>', views.question_info),
