@@ -27,7 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     "ketan2.pythonanywhere.com",
-    "127.0.0.1"
+    "127.0.0.1",
+    "localhost:3000",
+    "helix-assignment-frontend.vercel.app"
 ]
 
 
