@@ -48,6 +48,7 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
+    'https://ketan2.pythonanywhere.com',
     "https://helix-assignment-frontend.vercel.app",
     "http://localhost:3000",
     "http://127.0.0.1:3000"
