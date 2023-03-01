@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-fomkbf%eja=2co#t1h&m8s(*_%oz6h2h!3l0i#gfarngi(4s!=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "ketan2.pythonanywhere.com"
+]
 
 
 # Application definition
