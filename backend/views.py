@@ -1,5 +1,6 @@
 import imp
 from django.http import JsonResponse
+from django.http import HttpResponse
 from .models import Question
 from .serializers import QuestionsSerializer
 from rest_framework.decorators import api_view
@@ -8,7 +9,7 @@ from rest_framework import status
 
 
 def home(request):
-    return JsonResponse("Hey", safe=False)
+    return HttpResponse("Status OK")
 
 
 @api_view(["GET", "POST"])
