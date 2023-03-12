@@ -47,3 +47,14 @@ def question_info(request, id):
     elif request.method == "DELETE":
         question.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+@api_view(["GET"])
+def get_community_stats(request):
+    questions = Question.objects.count()
+    return Response({
+        "questions": questions,
+        "experts": 200,
+        "upvotes": 250,
+        "tokens_rewarded": 10
+    }, status=status.HTTP_200_OK)

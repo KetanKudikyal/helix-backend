@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('questions', views.questionList),
     path('questions/<int:id>', views.question_info),
+    path('stats', views.get_community_stats),
 ]
